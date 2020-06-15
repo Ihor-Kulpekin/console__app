@@ -1,9 +1,9 @@
 import React from 'react';
-import validationSchema from '../..//validation/validationSchema';
+import validationSchema from '../../validation/validationSchema';
 import Logo from '../../components/Logo/Logo';
 import LoginForm from '../../components/LoginForm/LoginForm';
-import {Wrapper} from '../../styled-components/Wrapper';
-import {Login} from '../../styled-components/Login';
+import {Wrapper} from '../../styled-components/StyledWrapper';
+import {Login} from '../../styled-components/StyledLogin';
 import LinkGit from '../../components/LinkGit/LinkGit';
 
 const LoginPage = () => {

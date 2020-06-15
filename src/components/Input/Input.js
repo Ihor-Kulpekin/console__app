@@ -1,5 +1,5 @@
 import React from 'react';
-import {ErrorMessage, InputField, StyledInputWrapper, StyledLabel} from '../../styled-components/Input';
+import {ErrorMessage, InputField, StyledInputWrapper, StyledLabel} from '../../styled-components/StyledInput';
 import Label from '../Label/Label';
 
 const Input = ({labelText, labelHint, errors, ...otherProps }) => (

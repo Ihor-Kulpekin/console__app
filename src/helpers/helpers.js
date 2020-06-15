@@ -5,7 +5,7 @@ export const isEqual = (a, b) => {
 
     let keysA = Object.keys(a), keysB = Object.keys(b);
 
-    if (keysA.length != keysB.length) return false;
+    if (keysA.length !== keysB.length) return false;
 
     for (let key of keysA) {
         if (!keysB.includes(key) || !isEqual(a[key], b[key])) return false;
@@ -39,8 +39,5 @@ export const loadHistory = (user = {}) => {
 };
 
 export const loadSettings = () => {
-
-    const settings = JSON.parse(localStorage.getItem('viewSettings'));
-
-    return settings;
+    return JSON.parse(localStorage.getItem('viewSettings'));
 };

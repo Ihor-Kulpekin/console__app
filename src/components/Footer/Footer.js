@@ -1,5 +1,4 @@
 import React from 'react';
-import Loader from '../Loader/Loader';
 
 import formatSvg from './align-right.svg';
 import BtnAction from '../BtnAction/BtnAction';

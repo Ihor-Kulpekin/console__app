@@ -1,12 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { connect } from 'react-redux';
 import beautify from 'js-beautify';
+
 import { sendRequest } from '../../actions/historyActions';
 import { updateFields } from '../../actions/consoleFormActions';
 import { saveSettings } from '../../actions/viewSettingsActions';
-import SvgIcon from '../SvgIcon/SvgIcon';
-import Loader from '../Loader/Loader';
-import {ConsoleErrors, StyledForm, StyledFormFields} from '../../styled-components/Console';
+import {ConsoleErrors, StyledForm, StyledFormFields} from '../../styled-components/StyledConsole';
 import Label from '../Label/Label';
 import Footer from '../Footer/Footer';
 
@@ -14,10 +13,6 @@ export const ConsoleForm = ({ formData, sendRequest, updateFields, saveSettings,
     const requestFieldBox = useRef(null);
 
     const [isFetching, setFetchingStatus] = useState(false);
-
-    useEffect(() => {
-        requestFieldBox.current.style.width = fieldWidth;
-    }, []);
 
     const handleRequestInput = (e) => {
 
@@ -37,7 +32,7 @@ export const ConsoleForm = ({ formData, sendRequest, updateFields, saveSettings,
             errors,
             responseText: '',
             isSuccess: true,
-            isRequestTextValid: errors.length > 0 ? false : true
+            isRequestTextValid: errors.length <= 0
         });
     };
 
@@ -72,6 +67,10 @@ export const ConsoleForm = ({ formData, sendRequest, updateFields, saveSettings,
         window.removeEventListener('mousemove', resize);
         window.removeEventListener('mouseup', stopResize);
     };
+
+    useEffect(() => {
+        requestFieldBox.current.style.width = fieldWidth;
+    }, [fieldWidth]);
 
     return (
         <StyledForm onSubmit={handleSubmit}>

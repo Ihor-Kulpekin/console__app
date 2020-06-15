@@ -10,7 +10,7 @@ import {
   HistoryDeleteBox,
   StyledHistory,
   StyledHistoryList, StyledListItem,
-} from '../../styled-components/History';
+} from '../../styled-components/StyledHistory';
 import deleteBtnSvg from './deleteBtn.svg';
 
 export const History = ({history, clearHistory}) => {
@@ -33,7 +33,6 @@ export const History = ({history, clearHistory}) => {
     } else {
       historyList.current.scrollLeft = currentPos - 100;
     }
-    ;
   };
 
   const handleScroll = (e) => {

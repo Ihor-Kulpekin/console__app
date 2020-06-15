@@ -7,7 +7,7 @@ import {setField, setFormValidity, setLoginErr, setFetchingStatus} from '../../v
 import {getFieldErrors} from '../../validation/validationFunctions';
 import Input from '../Input/Input';
 import FormAlert from '../FormAlert/FormAlert';
-import {StyledForm, StyledLoginForm} from '../../styled-components/Login';
+import {StyledForm, StyledLoginForm} from '../../styled-components/StyledLogin';
 import TittleApp from '../TittleApp/TittleApp';
 import BtnPrimary from '../BtnPrimary/BtnPrimary';
 

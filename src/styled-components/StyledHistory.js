@@ -16,7 +16,6 @@ font-size: 0;
 white-space: nowrap;
 scroll-behavior: smooth;
 overflow: scroll auto;
-scrollbar-width: none;
 -ms-overflow-style: none;
 
 &::-webkit-scrollbar {

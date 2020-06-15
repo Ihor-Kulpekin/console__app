@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../Logo/Logo';
 import User from '../User/User';
 import BtnToggleScreen from '../BtnToggleScreen/BtnToggleScreen';
-import {HeaderActions, HeaderWrapper} from '../../styled-components/Header';
+import {HeaderActions, HeaderWrapper} from '../../styled-components/StyledHeader';
 import TittleApp from '../TittleApp/TittleApp';
 import BtnAction from '../BtnAction/BtnAction';
 import {connect} from 'react-redux';

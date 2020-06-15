@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import {connect} from 'react-redux';
 import Header from '../../components/Header/Header';
 import Console from '../../components/Console/Console';
-import {Wrapper} from '../../styled-components/Wrapper';
-import {ConsoleContainer} from '../../styled-components/Console';
+import {Wrapper} from '../../styled-components/StyledWrapper';
+import {ConsoleContainer} from '../../styled-components/StyledConsole';
 import FullScreen from 'react-full-screen';
 
 export const ConsolePage = () => {
