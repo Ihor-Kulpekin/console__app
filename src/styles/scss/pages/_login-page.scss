@@ -1,0 +1,17 @@
+.login {
+    position: relative;
+    width: 100%;
+    max-width: 52rem;
+    min-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    
+    &__logo {
+        margin: 0 auto 2rem auto;
+    }
+
+    &__link {
+        margin: 2rem auto 0 auto;
+    }
+}

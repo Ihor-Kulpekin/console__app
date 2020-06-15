@@ -1,0 +1,21 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content;}
+    &:-moz-placeholder           {@content;}
+    &::-moz-placeholder          {@content;}
+    &:-ms-input-placeholder      {@content;}  
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin media ($width, $sign:"<") {
+
+    @if $sign == "<" {@media only screen and (max-width: $width/16 + "em") {@content}};
+
+    @if $sign == ">" {@media only screen and (min-width: $width/16 + "em") {@content}}; 
+    
+}

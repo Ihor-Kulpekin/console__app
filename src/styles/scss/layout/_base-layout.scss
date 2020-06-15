@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: $page-bg-color;
+    min-width: 64rem;
+    min-height: 52rem;
+
+    @media only screen and (max-width: 640px) {
+        overflow-x: scroll;
+    }
+
+    @media only screen and (max-height: 520px) {
+        overflow-y: scroll;
+    }
+}
+

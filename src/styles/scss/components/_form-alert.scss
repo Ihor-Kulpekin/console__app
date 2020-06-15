@@ -1,0 +1,23 @@
+.form-alert {
+    display: flex;
+    background-color: $bg-red-color;
+    border-radius: .5rem;
+    padding: 1.5rem 1.2rem;
+
+    &__icon-box {
+        margin-right: 1rem;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        font-weight: normal;
+        color: $red-color;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: rgba($red-color, .5);
+    }
+}

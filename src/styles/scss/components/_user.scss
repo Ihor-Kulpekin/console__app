@@ -1,0 +1,18 @@
+.user {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $black-color;
+    display: flex;
+    padding: 2.5px 1rem;
+    border: 1px solid $border-grey-color;
+    border-radius: .5rem;
+
+    & > *:not(:last-child) {
+        margin-right: 3px;
+    }
+
+    &__colon {
+        color: $border-grey-color;
+    }
+
+}

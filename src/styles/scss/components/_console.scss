@@ -1,0 +1,12 @@
+.console { 
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    flex: 1 1 100%;
+    overflow: hidden;
+
+    &__form {
+        flex: 1 1 100%;
+    }
+  
+}

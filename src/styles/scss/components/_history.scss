@@ -1,0 +1,45 @@
+.history {
+    background-color: $light-grey-color;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    position: relative;
+
+    &__list {
+        padding: 1rem 1rem 1rem 0;
+        flex: 1 1 100%;
+        font-size: 0;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        overflow: scroll auto;
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            background: transparent;
+        }
+        
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    &__btn-delete-box {
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: -15px 0 7px -3px rgba(#f6f6fa, .8);
+        position: relative;
+    }
+
+    &__empty-message {
+        padding: 1.7rem 0;
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,37 @@
+.dropdown {
+
+    &__list {}
+
+    &__item {
+        padding: .5rem 0;
+
+        &:last-child {
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    &__action {
+        display: inline-block;
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        cursor: pointer;
+        color: $black-color;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding: 1rem 1.5rem;
+        transition: all .2s;
+
+        &:hover {
+            color: #fff;
+            background-color: $blue-color;
+        }
+
+        &--red-hover {
+            &:hover {
+                background-color: $red-color;
+            }
+        }
+    }
+}

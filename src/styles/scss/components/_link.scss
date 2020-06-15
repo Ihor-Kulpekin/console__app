@@ -1,0 +1,24 @@
+.link {
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $grey-color;
+    transition: all .2s;
+    padding: .5rem;
+    border: 1px dotted transparent;
+    border-radius: .7rem;
+    outline: none;
+
+    &:focus {
+        color: $black-color;
+        border-color: $black-color;
+
+    }
+
+
+    &:hover {
+        color: $black-color;
+        text-decoration: underline;
+
+    }
+}

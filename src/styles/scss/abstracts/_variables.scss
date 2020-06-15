@@ -1,0 +1,27 @@
+//Font properties
+$base-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$code-font: 'PT Mono', monospace; 
+$semi-bold: 600;
+$bold: 700;
+
+//Colors
+$page-bg-color: #E5E5E5;
+$black-color: #0D0D0D;
+$light-grey-color: #F6F6F6;
+$grey-color: #999999;
+$red-color: #CF2C00;
+$dark-red-color: #a62300;
+$bg-red-color: rgba(207, 44, 0, .1);
+$green-color: #30B800;
+$dark-green-color: #269300;
+$blue-color: #0055FB;
+$light-blue-color: #45A5FF;
+$border-grey-color: #c4c4c4;
+
+//Btn gradients
+$btn-background: linear-gradient(180deg, #45A6FF 0%, #0055FB 100%), #C4C4C4;
+$btn-background-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(180deg, #45A6FF 0%, #0055FB 100%), #C4C4C4;
+$btn-background-active: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), linear-gradient(180deg, #45A6FF 0%, #0055FB 100%), #C4C4C4;
+$btn-background-disabled: linear-gradient(0deg, #C4C4C4, #C4C4C4), linear-gradient(180deg, #45A6FF 0%, #0055FB 100%);
+
+
