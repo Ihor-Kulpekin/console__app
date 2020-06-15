@@ -15,7 +15,7 @@ const AppRouter = () => (
                 <PublicRoute path="/" exact={true}>
                     <LoginPage />
                 </PublicRoute>
-                <PrivateRoute path="/app">
+                <PrivateRoute path="/console">
                     <ConsolePage />
                 </PrivateRoute>
                 <Route >

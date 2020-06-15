@@ -8,7 +8,7 @@ export const PublicRoute = ({ isAuth, children, ...otherProps }) => (
             !isAuth  ? (
                 children
             ) : (
-                <Redirect to='/app' />
+                <Redirect to='/console' />
             )
         }
     </Route>
