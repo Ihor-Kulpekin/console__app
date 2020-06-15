@@ -9,14 +9,14 @@ import {connect} from 'react-redux';
 import {startLogOut} from '../../actions/authActions';
 import logoutSvg from './log-out.svg';
 
-const Header = ({startLogOut}) => (
+const Header = ({startLogOut, onClick, isFullScreenMode}) => (
   <HeaderWrapper>
     <Logo className="header__logo"/>
     <TittleApp className="main-heading">API - консолька</TittleApp>
     <HeaderActions>
       <User/>
       <BtnAction onClick={startLogOut} svgUrl={logoutSvg} spanText="Выйти"/>
-      <BtnToggleScreen className="header__btn-toggle-screen"/>
+      <BtnToggleScreen isFullScreenMode={isFullScreenMode} onClick={onClick} className="header__btn-toggle-screen"/>
     </HeaderActions>
   </HeaderWrapper>
 );

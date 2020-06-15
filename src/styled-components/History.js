@@ -51,6 +51,7 @@ export const DeleteHistoryBtn = styled.button`
     height: 5rem;
     width: 5rem;
     display: flex;
+    border: 0;
     align-items: center;
     justify-content: center;
     position: relative;

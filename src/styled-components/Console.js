@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const ConsoleContainer = styled.div`
     width: 100%;
     height: 100%;
-    max-width: ${({isFullScreen}) => isFullScreen ? '100%' : '144rem'};
-    max-height: ${({isFullScreen}) => isFullScreen ? '100vh' : '73rem'};
+    max-width: 144rem;
+    max-height: 73rem;
     display: flex;
     flex-direction: column;
 `;

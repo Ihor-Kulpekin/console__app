@@ -15,7 +15,7 @@ const LoginPage = () => {
                 <LoginForm 
                     validationSchema={validationSchema}
                 />
-              <LinkGit href="https://github.com/AMisnikov/sendsay-test" name="@AMisnikov"/>
+              <LinkGit href="https://github.com/Ihor-Kulpekin/console__app" name="@Ihor-Kulpekin"/>
             </Login>
         </Wrapper>
     );

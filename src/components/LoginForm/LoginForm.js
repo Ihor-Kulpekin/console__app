@@ -34,7 +34,6 @@ const initialState = {
 
 
 export const LoginForm = ({validationSchema, startLogIn}) => {
-
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {

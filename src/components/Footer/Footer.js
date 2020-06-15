@@ -10,7 +10,7 @@ import BtnPrimary from '../BtnPrimary/BtnPrimary';
 const Footer = ({formData, isFetching, formatRequest}) => (
   <StyledFooter>
     <BtnPrimary disabled={!!(!formData.isRequestTextValid || isFetching)} text="Отправить" isFetching={isFetching}/>
-    <LinkGit href="https://github.com/AMisnikov/sendsay-test" className="footer_link" name="@AMisnikov"/>
+    <LinkGit href="https://github.com/Ihor-Kulpekin/console__app" className="footer_link" name="@Ihor-Kulpekin"/>
     <BtnAction onClick={formatRequest} svgUrl={formatSvg} spanText="Форматировать"/>
   </StyledFooter>
 );
