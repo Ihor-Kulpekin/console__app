@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { connect } from 'react-redux';
 import beautify from 'js-beautify';
+
 import { setFields } from '../../actions/consoleFormActions';
 import { startRemoveRequest, sendExistingRequest } from '../../actions/historyActions';
 import Dropdown from '../Dropdown/Dropdown';
@@ -87,13 +88,13 @@ export const Request = ({ request, removeRequest, runRequest, setFields }) => {
     };
     
     return (
-        <StyledRequest ref={requestBlock}>
+        <StyledRequest ref={requestBlock}  onClick={handleClickOnActions}>
             <RequestWrapper onClick={handleClickOnRequest}  className="request__wrapper">
                 <StyledStatusIcon isSuccess={request.isSuccess}/>
                 <RequestTittle>{JSON.parse(request.requestText).action}</RequestTittle>
                 {isCopied && <CopyMessage>Скопировано</CopyMessage>}
             </RequestWrapper>
-            <RequestActions onClick={handleClickOnActions}>
+            <RequestActions>
                 <BtnActions>
                     <StyledDots/>
                 </BtnActions>

@@ -17,12 +17,10 @@ white-space: nowrap;
 scroll-behavior: smooth;
 overflow: scroll auto;
 -ms-overflow-style: none;
-
 &::-webkit-scrollbar {
     width: 0;
     height: 0;
     background: transparent;
-
 `;
 
 export const StyledListItem = styled.li`
@@ -30,7 +28,7 @@ export const StyledListItem = styled.li`
 
     &:not(:last-child) {
       margin-right: 1rem;
-    }    
+    }  
 `;
 
 export const EmptyMessage = styled.p`
@@ -41,6 +39,7 @@ export const EmptyMessage = styled.p`
 export const HistoryDeleteBox = styled.div`
     border-left: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: -15px 0 7px -3px rgba(#f6f6fa, .8);
+    -webkit-box-shadow: -15px 0 7px -3px rgba(246,246,250,0.8);
     position: relative;
 `;
 
@@ -50,7 +49,7 @@ export const DeleteHistoryBtn = styled.button`
     height: 5rem;
     width: 5rem;
     display: flex;
-    border: 0;
+    border: none;
     align-items: center;
     justify-content: center;
     position: relative;

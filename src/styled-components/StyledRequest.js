@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledRequest = styled.div`
-    display: flex;
+  display: flex;
   align-items: center;
   border-radius: .5rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -77,8 +77,7 @@ export const RequestActions = styled.div`
     height: 3rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-      
+    justify-content: center;      
 `;
 
 export const BtnActions = styled.button`
