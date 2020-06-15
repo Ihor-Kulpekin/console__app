@@ -89,7 +89,7 @@ export const ConsoleForm = ({ formData, sendRequest, updateFields, saveSettings,
                     />
                 </div>
                 <div onMouseDown={initResize}  className="console-form__separator"> 
-                    <span></span> 
+                    <span/>
                 </div>
                 <div className={ !formData.isSuccess > 0 ? "console-form__field console-form__field--response console-field console-field--invalid" : "console-form__field console-form__field--response  console-field" }>
                     <Label value="Ответ" labelHint="console__label"/>

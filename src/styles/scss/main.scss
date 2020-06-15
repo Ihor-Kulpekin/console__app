@@ -4,49 +4,16 @@
 
 //Base (base styles, fonts, icons, typography)
 @import 'base/base';
-@import 'base/typography';
 
 
 //Components
-@import 'components/button';
 @import 'components/console-field';
 @import 'components/console-form';
 @import 'components/console';
 @import 'components/dropdown';
-@import 'components/form-alert';
-@import 'components/history';
-@import 'components/input';
-@import 'components/link';
 @import 'components/loader';
-@import 'components/login-form';
-@import 'components/logo';
 @import 'components/request';
-@import 'components/user';
-
-
-//Layout
-@import 'layout/base-layout';
-@import 'layout/header';
-
 
 
 //Pages
-@import 'pages/login-page';
-@import 'pages/console-page';
 @import 'pages/not-found-page';
-
-
-
-//Vendor extensions
-
-
-
-
-
-
-
-
-
-
-
-

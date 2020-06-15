@@ -9,7 +9,7 @@ import {
   EmptyMessage,
   HistoryDeleteBox,
   StyledHistory,
-  StyledHistoryList,
+  StyledHistoryList, StyledListItem,
 } from '../../styled-components/History';
 import deleteBtnSvg from './deleteBtn.svg';
 
@@ -73,9 +73,9 @@ export const History = ({history, clearHistory}) => {
             onMouseLeave={handleMouseLeave}
           >
             {history.map(request => (
-              <li key={request.id} className="history__item">
+              <StyledListItem key={request.id}>
                 <Request request={request}/>
-              </li>
+              </StyledListItem>
             ))}
           </StyledHistoryList>
           <HistoryDeleteBox>

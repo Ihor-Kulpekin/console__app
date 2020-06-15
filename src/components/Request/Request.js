@@ -4,9 +4,15 @@ import beautify from 'js-beautify';
 import { setFields } from '../../actions/consoleFormActions';
 import { startRemoveRequest, sendExistingRequest } from '../../actions/historyActions';
 import Dropdown from '../Dropdown/Dropdown';
+import {
+    BtnActions, CopyMessage,
+    RequestActions, RequestTittle,
+    RequestWrapper,
+    StyledDots, StyledRequest,
+    StyledStatusIcon,
+} from '../../styled-components/StyledRequest';
 
 export const Request = ({ request, removeRequest, runRequest, setFields }) => {
-
     const requestBlock = useRef(null);
     const dropdownEl = useRef(null);
 
@@ -81,16 +87,16 @@ export const Request = ({ request, removeRequest, runRequest, setFields }) => {
     };
     
     return (
-        <div ref={requestBlock} className="request">
-            <div onClick={handleClickOnRequest}  className="request__wrapper">
-                <div className={ request.isSuccess ? "request__status-icon request__status-icon--success" : "request__status-icon request__status-icon--fail" }></div> 
-                <div className="request__title">{ JSON.parse(request.requestText).action }</div>
-                { isCopied && <span className="request__copied-message">Скопировано</span> }
-            </div>
-            <div onClick={handleClickOnActions} className="request__actions">
-                <button className="btn-actions">
-                    <span></span>
-                </button>
+        <StyledRequest ref={requestBlock}>
+            <RequestWrapper onClick={handleClickOnRequest}  className="request__wrapper">
+                <StyledStatusIcon isSuccess={request.isSuccess}/>
+                <RequestTittle>{JSON.parse(request.requestText).action}</RequestTittle>
+                {isCopied && <CopyMessage>Скопировано</CopyMessage>}
+            </RequestWrapper>
+            <RequestActions onClick={handleClickOnActions}>
+                <BtnActions>
+                    <StyledDots/>
+                </BtnActions>
                 <Dropdown
                     ref={dropdownEl} 
                     className={ isDropdownOpen ? "request__dropdown request__dropdown--open" : "request__dropdown" }
@@ -98,8 +104,8 @@ export const Request = ({ request, removeRequest, runRequest, setFields }) => {
                     onCopy={handleCopy}
                     onRemove={handleRemove}
                 />
-            </div>  
-        </div>
+            </RequestActions>
+        </StyledRequest>
     );
 };
 
@@ -107,7 +113,6 @@ const mapDispatchToProps = dispatch => ({
     setFields: (request) => dispatch(setFields(request)),
     removeRequest: (id) => dispatch(startRemoveRequest(id)),
     runRequest: (id, request) => dispatch(sendExistingRequest(id, request))
-
 });
 
 export default connect(undefined, mapDispatchToProps)(Request);

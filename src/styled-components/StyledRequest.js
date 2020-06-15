@@ -77,16 +77,18 @@ export const RequestActions = styled.div`
     height: 3rem;
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+      
 `;
 
 export const BtnActions = styled.button`
     width: 2rem;
     height: 3rem;
+    border:0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;  
+    background-color: transparent; 
 `;
 
 export const StyledDots = styled.span`
@@ -103,6 +105,7 @@ export const StyledDots = styled.span`
            cursor: pointer;
            color: rgba(0, 0, 0, 0.4);
         }
+       
 
         &::before,
         &::after {
